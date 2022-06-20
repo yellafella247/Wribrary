@@ -1,0 +1,16 @@
+@import '../variables.scss';
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: $darkBackgroundColor;
+  width: 100%;
+  padding: 10px;
+
+  h1 {
+    cursor: pointer;
+    font-size: calc(20px + 2vw);
+  }
+
+  @include defaultButton;
+}

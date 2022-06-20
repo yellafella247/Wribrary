@@ -1,0 +1,38 @@
+@import '../variables.scss';
+
+body {
+  .login, .register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: fit-content;
+
+      .field {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        label {
+          margin-right: 10px;
+        }
+
+        input {
+          padding: 10px;
+          background-color: $fieldColor;
+          color: #000;
+          border: 2px solid #000;
+        }
+      }
+
+      @include defaultButton;
+    }
+  }
+}

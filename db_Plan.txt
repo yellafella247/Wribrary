@@ -1,0 +1,12 @@
+User
+-
+UserID PK
+Email string
+Password string
+TextID int FK -< Text.TextID
+
+Text
+-
+TextID
+Title string
+Content string

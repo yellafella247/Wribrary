@@ -1,0 +1,67 @@
+@import '../variables.scss';
+
+body {
+  .texts {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    
+    .textContainer {
+      display: flex;
+      width: 80%;
+      height: 80%;
+
+      border: 2px solid #000;
+
+      .listSection {
+        width: 20%;
+        height: 100%;
+        border-right: 2px solid #000;
+
+        @include defaultButton;
+
+        button {
+          width: 100%;
+        }
+      }
+
+      .editContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 100%;
+      }
+
+      .textSection, .addSection {
+        width: 95%;
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+
+        input {
+          background-color: $fieldColor;
+          border: none;
+        }
+
+        textarea {
+          flex-grow: 1;
+          width: 100%;
+          height: 100%;
+          resize: none;
+          background-color: $fieldColor;
+        }
+
+        @include defaultButton;
+
+        .buttons {
+          display: flex;
+          justify-content: space-around;
+        }
+
+      }
+    }
+  }
+}

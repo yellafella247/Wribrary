@@ -1,0 +1,25 @@
+$darkBackgroundColor: #192126;
+$lightBackgroundColor: #1e282e;
+
+$darkButtonColor: #3c4f5c;
+$lightButtonColor: #638396;
+
+$lightTextColor: #98ceeb;
+$darkTextColor: #aaa;
+
+$fieldColor: #84a9bf;
+
+@mixin defaultButton {
+  button {
+    width: 15vw;
+    height: 5vh;
+    padding: 10px;
+    color: $lightTextColor;
+    background-color: $darkButtonColor;
+    border: 2px solid #000;
+  }
+
+  button:hover {
+    background-color: $lightButtonColor;
+  }
+}
